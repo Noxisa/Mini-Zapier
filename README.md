@@ -192,46 +192,6 @@ src/app/api/
 
 ## Phase 2: Workflow Engine
 
-### 2.1 Core Workflow Logic
-
-**Workflow Configuration Format:**
-
-```json
-{
-  "triggers": [
-    {
-      "type": "webhook",
-      "config": {
-        "method": "POST",
-        "expectedData": ["email", "name"]
-      }
-    }
-  ],
-  "actions": [
-    {
-      "type": "email",
-      "config": {
-        "provider": "gmail",
-        "to": "{{trigger.email}}",
-        "subject": "Welcome {{trigger.name}}",
-        "body": "Thank you for signing up!"
-      }
-    },
-    {
-      "type": "database",
-      "config": {
-        "table": "customers",
-        "operation": "insert",
-        "data": {
-          "email": "{{trigger.email}}",
-          "name": "{{trigger.name}}",
-          "source": "webhook"
-        }
-      }
-    }
-  ]
-}
-```
 
 **Implementation:**
 
