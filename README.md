@@ -493,47 +493,6 @@ interface ActionHandler {
 - Analytics data export
 - Scheduled report generation
 
----
-
-## Environment Variables Configuration
-
-### Required Environment Variables
-
-```env
-# Database
-DATABASE_URL="postgresql://username:password@localhost:5432/minizapier"
-
-# Authentication
-NEXTAUTH_SECRET="your-secret-key"
-NEXTAUTH_URL="http://localhost:3000"
-
-# OAuth Providers
-GOOGLE_CLIENT_ID="your-google-client-id"
-GOOGLE_CLIENT_SECRET="your-google-client-secret"
-GITHUB_CLIENT_ID="your-github-client-id"
-GITHUB_CLIENT_SECRET="your-github-client-secret"
-
-# Email Services
-GMAIL_CLIENT_ID="your-gmail-client-id"
-GMAIL_CLIENT_SECRET="your-gmail-client-secret"
-SENDGRID_API_KEY="your-sendgrid-api-key"
-
-# SMS Services
-TWILIO_ACCOUNT_SID="your-twilio-account-sid"
-TWILIO_AUTH_TOKEN="your-twilio-auth-token"
-TWILIO_PHONE_NUMBER="your-twilio-phone"
-
-# AI Services
-OPENAI_API_KEY="your-openai-api-key"
-
-# Payment Processing
-STRIPE_SECRET_KEY="your-stripe-secret-key"
-STRIPE_PUBLISHABLE_KEY="your-stripe-publishable-key"
-
-# Encryption
-ENCRYPTION_KEY="your-32-character-encryption-key"
-```
-
 ### Security Considerations
 
 **Credential Encryption:**
